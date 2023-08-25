@@ -1,0 +1,129 @@
+/* Base styles */
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Product list */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(33.33% - 20px);
+}
+
+.product-item-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Features list */
+.features-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.features-list-item {
+  padding: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.features-list-item.selected {
+  background-color: #f0f0f0;
+}
+
+/* Selected features */
+.selected-features {
+  margin-top: 20px;
+}
+
+.selected-features-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.selected-features-item-heading {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.selected-features-item-list {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* Footer */
+.footer {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .product-item {
+    width: calc(50% - 20px);
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.product-section,
+.addon-section {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 10px;
+  overflow: auto; /* Add this to enable scrolling if content exceeds the box size */
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.quickbooks-logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
