@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
-import './App.css'; 
+import './App.css';
 
 const SearchBar = ({ data, onDataSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearch = () => {
-    const filteredData = data.filter(item =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.features.some(feature => feature.toLowerCase().includes(searchTerm.toLowerCase()))
-    );
-    onDataSearch(filteredData);
+    if (searchTerm.trim() === '') {
+      onDataSearch(data);
+    } else {
+      const filteredData = data.filter(
+        (item) =>
+          item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          item.features.some((feature) =>
+            feature.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+      );
+      onDataSearch(filteredData);
+    }
   };
 
   const handleReset = () => {
@@ -24,10 +31,14 @@ const SearchBar = ({ data, onDataSearch }) => {
         type="text"
         placeholder="Search for products or addons"
         value={searchTerm}
-        onChange={e => setSearchTerm(e.target.value)}
+        onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <button className="search-button" onClick={handleSearch}>Search</button>
-      <button className="reset-button" onClick={handleReset}>Reset</button>
+      <button className="search-button" onClick={handleSearch}>
+        Search
+      </button>
+      <button className="reset-button" onClick={handleReset}>
+        Reset
+      </button>
     </div>
   );
 };

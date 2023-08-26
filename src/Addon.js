@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import './App.css'; 
+import './App.css';
 
 const Addon = ({ name, features }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="addon">
+    <div className="addon-item"> {/* Use addon-item class here */}
       <h2>{name}</h2>
-      <button className="addon-button" onClick={() => setExpanded(!expanded)}>
+      <button className="features-list-item" onClick={() => setExpanded(!expanded)}>
         {expanded ? 'Hide Features' : 'Show Features'}
       </button>
       {expanded && (

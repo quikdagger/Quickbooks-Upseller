@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css'; 
 
 const Product = ({ name, features }) => {
+  console.log(name, features);
   const [expanded, setExpanded] = useState(false);
 
   return (
