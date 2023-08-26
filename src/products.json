@@ -1,0 +1,86 @@
+[
+    {
+      "name": "SimpleStart (one user)",
+      "features": [
+        "Basic plan with a free guided setup",
+        "Income and expenses",
+        "Invoice and payments",
+        "Tax deductions",
+        "General reports",
+        "Receipt capture",
+        "Mileage tracking",
+        "Cash flow",
+        "Sales and sales tax",
+        "Estimates",
+        "Contractors",
+        "Connect 1 sales channel"
+      ]
+    },
+    {
+      "name": "Self-Employed",
+      "features": [
+        "Flexible plans for freelancers or independent contractors"
+      ]
+    },
+    {
+      "name": "Essential (3 users)",
+      "features": [
+        "Enhanced reports",
+        "Connect 3 sales channels",
+        "Bill management",
+        "Enter time"
+      ]
+    },
+    {
+      "name": "Plus (5 users)",
+      "features": [
+        "Comprehensive reports",
+        "Inventory management",
+        "Project profitability",
+        "Live insights from your accountant",
+        "Data protection",
+        "CAN ALSO ADD ON PAYROLL CORE"
+      ],
+      "addons": [
+        {
+          "name": "PAYROLL CORE",
+          "features": [
+            "Full service payroll (includes automated taxes and forms)",
+            "1099 E-File and Pay",
+            "Expert product support",
+            "Next-day direct deposit",
+            "401(k) plans",
+            "Health benefits for the team"
+          ]
+        },
+        {
+          "name": "PAYROLL PREMIUM",
+          "features": [
+            "24/7 expert product support",
+            "Track time on the go",
+            "Expert review",
+            "HR Support Center",
+            "Workers' Comp administration"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Advanced (25 users)",
+      "features": [
+        "Best if operating in multiple locations",
+        "Evaluate profitability of each location",
+        "Generate detailed reporting",
+        "Data sync with Excel",
+        "Employee expenses",
+        "Batch invoices and expenses",
+        "Custom access controls",
+        "Exclusive premium apps",
+        "Workflow automation",
+        "Data restoration",
+        "24/7 support and training",
+        "Revenue recognition"
+      ]
+    }
+  ]
+  

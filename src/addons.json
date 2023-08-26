@@ -1,0 +1,72 @@
+[
+    {
+      "name": "Payroll",
+      "features": [
+        "Simplifies employee payments, tax calculations, and compliance",
+        "Integrates with accounting for easy payroll management",
+        "Automated payroll",
+        "Automated tax forms and tax filing",
+        "Expert support",
+        "HR tools",
+        "Health Benefits",
+        "401(k) plans",
+        "Stays on top of compliance and makes sure that taxes and other regulations are being taken care of",
+        "Sync with employee time sheets"
+      ]
+    },
+    {
+      "name": "Payments",
+      "features": [
+        "Easy acceptance of credit, debit, checks, mobile payments, and online payments.",
+        "Streamlines invoicing and improves cash flow"
+      ]
+    },
+    {
+      "name": "Time",
+      "features": [
+        "Tracks employee hours and schedules",
+        "Simplifies payroll and improves productivity",
+        "Shows who is working",
+        "Allows employees and contractors to clock in from anywhere and with geofencing can see where they were when they clocked in",
+        "Tablet punch clock for simple clock-in clock out at an office",
+        "Geofencing allows the ability to tie specific locations to projects and even remind employees to clock in or clock out when they leave the job site",
+        "Mileage tracking",
+        "Dashboard allows for creation of time schedules and employee time tracking even showing who is working where and on what project",
+        "Project tracking allows for comparing budgeting hours vs actual hours",
+        "Can use the app to share notes and information on each project",
+        "Syncs with Payroll system including regular hours, overtime, and even PTO"
+      ]
+    },
+    {
+      "name": "Commerce",
+      "features": [
+        "Real-time tracking of inventory",
+        "Ensure inventory is available to meet customer needs",
+        "When inventory is sold real-time updates to the inventory",
+        "Great for e-commerce"
+      ]
+    },
+    {
+      "name": "Point of Sale (Desktop)",
+      "features": [
+        "Streamlined sales processing",
+        "Inventory management",
+        "Customer relations",
+        "Integrates with common retail hardware and even works offline",
+        "Offers reports for informed decision making and smoother operations",
+        "Integrates with Shopify POS"
+      ]
+    },
+    {
+      "name": "Apps",
+      "features": [
+        "Created by Intuit and third-party developers",
+        "Integrates with QB for enhanced functionality",
+        "Helps with specific business needs",
+        "More than 450 supported apps that work with QBO",
+        "Cover a wide range of topics from inventory management, time tracking, expenses, customer relationships, e-commerce, and more",
+        "Allows customer to make QB their own and customize to their exact needs"
+      ]
+    }
+  ]
+  
