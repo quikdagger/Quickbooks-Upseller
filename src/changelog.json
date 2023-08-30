@@ -1,5 +1,13 @@
 [
     {
+        "version": "v0.1.6.3.1",
+        "description": "Search work-around implemented. Reset now functions since removing data from search does not revert data but real-time search is functioning. SearchBar.js now has a full rewrite for function. "
+    },
+    {
+        "version": "v0.1.6.3",
+        "description": "Real-time search reinstated. Rewrite of SearchBar.js and adding of <SearchBar data={filteredProducts} onDataSearch={handleProductSearch} /> and  <SearchBar data={filteredAddons} onDataSearch={handleAddonSearch} />"
+    },
+    {
         "version": "v0.1.6.2",
         "description": "UI transitions updated. Stage 2 complete."
     },

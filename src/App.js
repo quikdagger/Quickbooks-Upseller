@@ -38,7 +38,7 @@ const App = () => {
     <div className="app">
       <div className="background-image"></div> 
       <header className="header">
-        Quickbooks UpSeller v.0.1.6.2
+        Quickbooks UpSeller v.0.1.6.3.1
       </header>
 
       <p className="header2">
@@ -50,7 +50,7 @@ const App = () => {
       <div className="content">
         <div className={`product-section ${productsClicked ? 'clicked' : ''}`}>
           <h2 className="section-heading" onClick={handleProductsClick}>Products</h2>
-          <SearchBar data={productData} onDataSearch={handleProductSearch} />
+          <SearchBar data={filteredProducts} onDataSearch={handleProductSearch} />
           <div className="product-list">
             {filteredProducts.map((product, index) => (
               <Product key={index} name={product.name} features={product.features} />
@@ -60,7 +60,7 @@ const App = () => {
 
         <div className={`addon-section ${addonsClicked ? 'clicked' : ''}`}>
           <h2 className="section-heading" onClick={handleAddonsClick}>Addons</h2>
-          <SearchBar data={addonData} onDataSearch={handleAddonSearch} />
+          <SearchBar data={filteredAddons} onDataSearch={handleAddonSearch} />
           <div className="addon-list">
             {filteredAddons.map((addon, index) => (
               <Addon key={index} name={addon.name} features={addon.features} />

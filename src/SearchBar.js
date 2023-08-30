@@ -1,13 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const SearchBar = ({ data, onDataSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
+  useEffect(() => {
+    // This effect runs whenever the search term or data changes
+    const filteredData = data.filter(
+      (item) =>
+        item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        item.features.some((feature) =>
+          feature.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+    );
+    onDataSearch(filteredData);
+  }, [searchTerm, data, onDataSearch]);
+
   const handleSearch = () => {
     if (searchTerm.trim() === '') {
-      onDataSearch(data);
+      // If search term is empty, trigger reset action
+      window.location.reload();
     } else {
+      // Perform search based on the entered term
       const filteredData = data.filter(
         (item) =>
           item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -20,8 +34,7 @@ const SearchBar = ({ data, onDataSearch }) => {
   };
 
   const handleReset = () => {
-    setSearchTerm('');
-    onDataSearch(data);
+    window.location.reload();
   };
 
   return (

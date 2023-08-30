@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css'; 
 
 const Product = ({ name, features }) => {
-  console.log(name, features);
+  console.log('Rendering Product:', name);
   const [expanded, setExpanded] = useState(false);
 
   return (
